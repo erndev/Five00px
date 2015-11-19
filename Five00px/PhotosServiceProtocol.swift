@@ -11,5 +11,4 @@ import UIKit
 protocol PhotosServiceProtocol {
   
   func findBestRatingPictures( completion:(error:NSError? )-> Void )
-  func imageForURL(imageURL:NSURL, completion: (image:UIImage?, error:NSError?)->Void )
 }

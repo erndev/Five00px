@@ -35,9 +35,5 @@ class  PhotosService : PhotosServiceProtocol {
       
     }
   }
-  
-  func imageForURL(imageURL: NSURL, completion: (image: UIImage?, error: NSError?) -> Void) {
-    
-  }
 
 }
