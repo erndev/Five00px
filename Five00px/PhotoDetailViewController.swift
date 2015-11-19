@@ -114,11 +114,12 @@ class PhotoDetailViewController: UIViewController {
     
     imageView.image  = placeHolder
     guard let url = url else {
-      mapView.hidden = true
       return
     }
     imageDownloadService?.downloadImageAtURL(url, completion: { (image, error) -> Void in
-      
+      guard image != nil else {
+        return
+      }
       dispatch_async(dispatch_get_main_queue(), { () -> Void in
           imageView.image = image
       })
