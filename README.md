@@ -21,17 +21,16 @@ The core data stack is implemented in the **CoreDataStore** class.
 
 
 
-** Networwing ** 
+**Networking** 
 
 * **NSURLSession** is used to implement the network communication.
 * **FiveHundredPxAPI** : It's the class Implements the 500px protocol (only the featured pictures endpoint)
 
 
-** Services **
+**Services**
 
 * **PhotosService** : This service class retrieves the featured photos for the view controllers, isolating them from the api implementation.
 * **ImageDownloaderService** : This service downloads images and implements a very basic caching. It's used by the controllers to download the actual images and the profile images.
 * **PhotoImportService** : This services imports a list of photos into the core data context. It uses a private context to import it.
 
- 
  
